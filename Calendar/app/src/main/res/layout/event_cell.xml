@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_width="match_parent" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                android:id="@+id/titleBackground"
+                android:background="@color/transparent_blue"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/dateTextView" />
+                
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@color/blue"
+                    android:text="Modify"
+                    android:id="@+id/modifyButton"
+                    android:layout_toLeftOf="@+id/deleteButton"
+                    android:textColor="@color/white"/>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:background="@null"
+                    android:id="@+id/deleteButton"
+                    android:src="@mipmap/menu_close"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:cropToPadding="true"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptionTextView"
+                android:text="Event"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

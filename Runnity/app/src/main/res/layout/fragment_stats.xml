@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.synchro.runnity.RunsFragment"
+    android:orientation="vertical"
+    android:background="@color/super_light_grey">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/runInfos"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:background="@color/transparent_green"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Distance totale"
+                    android:paddingRight="5dp"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:id="@+id/distanceTextView" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="0km"
+                    android:textSize="12sp"
+                    android:id="@+id/totalDistanceValue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/transparent_green"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Temps total"
+                    android:paddingRight="5dp"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:id="@+id/lastDistanceTextView" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="0s"
+                    android:textSize="12sp"
+                    android:id="@+id/timeValue" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:background="@color/transparent_green"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre de pas"
+                android:paddingRight="5dp"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="0"
+                android:textSize="12sp"
+                android:id="@+id/footStepsCounter" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/transparent_green"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calories brulées"
+                android:paddingRight="5dp"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="0cal"
+                android:textSize="12sp"
+                android:id="@+id/caloriesValue" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:background="@color/transparent_green"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vitesse maximale"
+                    android:paddingRight="5dp"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="0km/h"
+                    android:textSize="12sp"
+                    android:id="@+id/maxSpeedValue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/transparent_green"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vitesse moyenne"
+                    android:paddingRight="5dp"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="0km/h"
+                    android:textSize="12sp"
+                    android:id="@+id/averageSpeedValue" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

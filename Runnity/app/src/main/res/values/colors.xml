@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#33929A</color>
+    <color name="navigationBarColor">#44A3AB</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="green">#44A3AB</color>
+    <color name="transparent_green">#AC44A3AB</color>
+    <color name="transparent_dark_green">#AC33929A</color>
+    <color name="light_green">#79C5A6</color>
+    <color name="red">#D2261C</color>
+    <color name="orange">#FF6900</color>
+    <color name="transparent_red">#4CD2261C</color>
+    <color name="transparent_orange">#4CFF6900</color>
+    <color name="white">#FFFFFF</color>
+    <color name="super_light_grey">#E0E0E0</color>
+    <color name="light_grey">#9D9D9D</color>
+    <color name="light_dark_grey">#838383</color>
+    <color name="dark_grey">#555555</color>
+    <color name="transparent_dark_grey">#4C555555</color>
+    <color name="transparent_white">#9CFFFFFF</color>
+    <color name="blue">#2071C5</color>
+    <color name="button_active">#3F000000</color>
+    <color name="button">#0F000000</color>
+
+</resources>

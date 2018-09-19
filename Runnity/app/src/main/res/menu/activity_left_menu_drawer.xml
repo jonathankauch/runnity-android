@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_wall"
+            android:title="Publications" />
+        <item
+            android:id="@+id/nav_friends"
+            android:title="Amis" />
+        <item
+            android:id="@+id/nav_rankings"
+            android:title="Classements" />
+        <item
+            android:id="@+id/nav_events"
+            android:title="@string/menu_events" />
+        <item
+            android:id="@+id/naw_groups"
+            android:title="@string/menu_groups" />
+        <item
+            android:id="@+id/nav_runs"
+            android:title="@string/menu_runs" />
+        <item
+            android:id="@+id/nav_spots"
+            android:title="Points de course" />
+        <item
+            android:id="@+id/nav_stats"
+            android:title="@string/menu_stats" />
+        <item
+            android:id="@+id/nav_charts"
+            android:title="@string/menu_charts" />
+        <item
+            android:id="@+id/nav_objectives"
+            android:title="Objectifs" />
+        <item
+            android:id="@+id/nav_disconnect"
+            android:title="Déconnexion" />
+    </group>
+
+</menu>

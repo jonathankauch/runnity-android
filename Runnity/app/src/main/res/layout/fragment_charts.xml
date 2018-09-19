@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.synchro.runnity.ChartsFragment"
+    android:orientation="vertical"
+    android:background="@color/super_light_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/chartTypeLayout"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/distanceButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Distance"
+            android:textColor="@color/white"
+            android:background="#3F000000"
+            android:layout_weight="0.5"/>
+
+        <Button
+            android:id="@+id/timeButton"
+            android:layout_width="0dp"
+            android:text="Temps"
+            android:background="#0F000000"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+
+        <Button
+            android:id="@+id/sessionsButton"
+            android:layout_width="0dp"
+            android:text="Sessions"
+            android:background="#0F000000"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+
+        <Button
+            android:id="@+id/caloriesButton"
+            android:layout_width="0dp"
+            android:text="Calories"
+            android:background="#0F000000"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chartTypeLayout"
+        android:id="@+id/distanceChartLayout"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/distanceChart"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chartTypeLayout"
+        android:id="@+id/timeChartLayout"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/timeChart"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chartTypeLayout"
+        android:id="@+id/sessionsChartLayout"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/sessionsChart"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chartTypeLayout"
+        android:id="@+id/caloriessChartLayout"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/caloriesChart"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chartTypeLayout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chart2"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

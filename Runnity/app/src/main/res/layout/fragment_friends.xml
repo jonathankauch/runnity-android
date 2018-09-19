@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.synchro.runnity.PostsFragment"
+    android:orientation="vertical"
+    android:background="@color/super_light_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/listTypeLayout"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/friendsButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Liste d'amis"
+            android:textColor="@color/white"
+            android:background="#3F000000"
+            android:layout_weight="0.5"/>
+
+        <Button
+            android:id="@+id/waitingFriendsButton"
+            android:layout_width="0dp"
+            android:text="Invitations"
+            android:background="#0F000000"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/listTypeLayout"
+        android:id="@+id/friendListLayout"
+        android:orientation="vertical">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/friendsListView"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/waitingFriendListLayout"
+        android:layout_below="@id/listTypeLayout"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/waitingFriendsListView"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:id="@+id/newFriendButton"
+            android:layout_height="wrap_content"
+            android:src="@android:color/transparent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="+"
+            android:elevation="16dp"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/newFriendLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AC000000"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent_green"
+            android:orientation="vertical"
+            android:padding="3dp"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content"
+                    android:text="Ajouter un ami"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@color/super_light_grey"
+                android:layout_gravity="top|start"
+                android:foregroundGravity="top|left"
+                android:gravity="top|start"
+                android:hint="Email ami"
+                android:padding="5dp"
+                android:inputType="textEmailAddress"
+                android:id="@+id/idNewFriend"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ajouter"
+                android:textColor="@color/white"
+                android:id="@+id/addFriendButton"
+                android:background="@color/green"
+                android:layout_margin="5dp"
+                android:layout_alignParentBottom="true" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

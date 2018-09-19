@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/super_light_grey"
+    tools:context="com.synchro.runnity.ProfileFragment">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <EditText
+            android:background="@color/white"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:id="@+id/mailEditView"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            android:hint="Email"/>
+
+        <EditText
+            android:textColorHint="@color/black"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastnameEditView"
+            android:textColor="@color/black"
+            android:hint="Nom"/>
+
+        <EditText
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:id="@+id/firstnameEditView"
+            android:textColorHint="@color/black"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="Prénom"/>
+
+        <EditText
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:id="@+id/phoneEditView"
+            android:hint="Téléphone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:id="@+id/weightEditView"
+                android:hint="Poids"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="kg"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <EditText
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addressEditView"
+            android:hint="Adresse"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmer"
+            android:textColor="@color/white"
+            android:id="@+id/registerButton"
+            android:background="@color/green" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Runit</string>
+
+    <!-- Strings related to login -->
+    <string name="first_page_title">Accueil</string>
+    <string name="menu_home">Accueil</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="old_api_url">http://api.runit.fr/</string>
+    <string name="api_url">https://runitv2.herokuapp.com/api/v1/</string>
+
+    <string name="navigation_drawer_open">Ouvrir le menu</string>
+    <string name="navigation_drawer_close">Fermer le menu</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="running">"Moving : "</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="distance">Distance</string>
+    <string name="last_distance">"Dernière distance : "</string>
+    <string name="distance_placeholder">0 m</string>
+    <string name="time">Temps</string>
+    <string name="last_time">"Dernier temps : "</string>
+    <string name="time_placeholder">0 min</string>
+    <string name="best_speed">Vitesse max</string>
+    <string name="actual_speed">Vitesse actuelle</string>
+    <string name="speed_placeholder">0 km/h</string>
+    <string name="start">Démarrer</string>
+    <string name="stop">Stop</string>
+    <string name="pause">Pause</string>
+    <string name="please_wait">Préparation en cours</string>
+    <string name="sending">Envoi en cours</string>
+    <string name="menu_runs">Historique</string>
+    <string name="menu_profile">Profil</string>
+    <string name="menu_events">Événements</string>
+    <string name="menu_groups">Groupes</string>
+    <string name="menu_stats">Statistiques</string>
+    <string name="menu_charts">Courbes</string>
+    <string name="average_speed">Vitesse Moyenne</string>
+    <string name="runs">Vitesse Moyenne</string>
+    <string name="average_distance">Distance Moyenne</string>
+    <string name="average_time">Temps Moyen</string>
+    <string name="enable_spot">Activer le point de course</string>
+    <string name="disable_spot">Désactiver le point de course</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyCf5OIfDsQ-SOFQjf7egQ1ZgO84POz5Fj4
+    </string>
+
+</resources>
